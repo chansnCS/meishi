@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-dictionaries>
+
+	 <group code="table" name="表关系">
+        <option code="chuancai" name="川菜"/>
+        <option code="dongbeicai" name="东北菜"/>
+        <option code="jiachangcai" name="家常菜"/>
+        <option code="haixian" name="海鲜"/>
+        <option code="mian" name="面条"/>
+        <option code="roulei" name="肉类"/>
+     </group>
+
+</data-dictionaries>
