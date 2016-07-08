@@ -7,13 +7,13 @@
  */
 package com.melody.meishi.base;
 
-import javax.servlet.ServletContext;
-import javax.servlet.ServletContextEvent;
-import javax.servlet.ServletContextListener;
-
 import org.apache.log4j.Logger;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.context.support.WebApplicationContextUtils;
+
+import javax.servlet.ServletContext;
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
 
 
 /**
@@ -52,10 +52,6 @@ public class StartupListener implements ServletContextListener {
 	 */
 	private static void initData(ApplicationContext applicationContext) {
 
-//		//初始化数据字典
-//		DictManage.configDict(DictManage.DICT_CONSTANT, "data-dict.xml");
-//		DictManage.setDefaultDict(DictManage.DICT_CONSTANT);
-		
 	}
 
 }

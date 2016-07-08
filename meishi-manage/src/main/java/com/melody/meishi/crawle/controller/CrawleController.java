@@ -2,13 +2,9 @@ package com.melody.meishi.crawle.controller;
 
 import com.meishi.ws.service.MeishiService;
 import com.melody.meishi.crawle.pipline.DouguoPipeline;
-import com.melody.meishi.crawle.processor.DouguoProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import us.codecraft.webmagic.Spider;
-
-import java.util.ArrayList;
 
 /**
  * Created by Cooper on 2015/8/31.

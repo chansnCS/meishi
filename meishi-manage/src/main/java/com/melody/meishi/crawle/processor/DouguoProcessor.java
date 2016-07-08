@@ -1,11 +1,8 @@
 package com.melody.meishi.crawle.processor;
-import java.util.ArrayList;
-import java.util.List;
 
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;
 import us.codecraft.webmagic.processor.PageProcessor;
-import us.codecraft.webmagic.selector.Selectable;
 import us.codecraft.webmagic.utils.UrlUtils;
 
 public class DouguoProcessor implements PageProcessor {
