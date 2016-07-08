@@ -1,7 +1,7 @@
 package com.melody.meishi.crawle.controller;
 
 import com.meishi.ws.service.MeishiService;
-import com.melody.meishi.crawle.pipline.DouguoPipeline;
+import com.melody.meishi.crawle.pipline.DefaultPipline;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +16,7 @@ public class CrawleController {
     private static final String PROPERTIES_FILE_NAME = "table.properties";
 
     @Autowired
-    private DouguoPipeline douguoPipeline;
+    private DefaultPipline douguoPipeline;
     @Autowired
     private MeishiService meishiService;
 
@@ -30,8 +30,6 @@ public class CrawleController {
 //        if (StringUtil.isNullOrEmpty(type)){
 //            return;
 //        }
-//
-//        DouguoProcessor processor = new DouguoProcessor("http://www.douguo.com/",null, type, table);
 //
 //        Spider.create(processor)
 //                .addUrl("http://www.douguo.com/caipu/"+type+"/")

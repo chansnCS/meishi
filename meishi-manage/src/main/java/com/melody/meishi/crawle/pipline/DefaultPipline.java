@@ -4,6 +4,7 @@ import com.meishi.ws.service.MeishiService;
 import org.apache.http.annotation.ThreadSafe;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import us.codecraft.webmagic.ResultItems;
 import us.codecraft.webmagic.Task;
@@ -16,8 +17,8 @@ import java.io.PrintWriter;
 
 
 @ThreadSafe
-@Service(value = "douguoPipline")
-public class DouguoPipeline implements Pipeline {
+@Component(value = "douguoPipline")
+public class DefaultPipline implements Pipeline {
 
 	private Logger logger = LoggerFactory.getLogger(getClass());
 
@@ -26,7 +27,7 @@ public class DouguoPipeline implements Pipeline {
 	@Resource
 	private MeishiService meishiService;
 	
-	public DouguoPipeline() {
+	public DefaultPipline() {
 		filePath = "D:\\webmagic-meishi\\data\\douguo\\东北菜\\";
 	}
 	

@@ -42,7 +42,8 @@ public class StartupListener implements ServletContextListener {
 
 	public static void setupContext(ServletContext context) {
 		ApplicationContext applicationContext = WebApplicationContextUtils.getRequiredWebApplicationContext(context);
-		// 加载静态数据
+		// 加载静态数据.
+
 		initData(applicationContext);
 		
 	}
